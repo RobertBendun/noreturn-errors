@@ -1,4 +1,4 @@
-Executables=c cpp dlang go rust zig
+Executables=c cpp dlang go haskell rust zig
 
 all: $(Executables)
 
@@ -20,5 +20,8 @@ all: $(Executables)
 %: %.go
 	go build $<
 
+%: %.hs
+	ghc $<
+
 clean:
-	rm -f $(Executables) *.o
+	rm -f $(Executables) *.o *.hi

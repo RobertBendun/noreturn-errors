@@ -2,9 +2,11 @@ c
 cpp
 dlang
 go
+haskell
 rust
 zig
 *.o
+*.hi
 
 zig-cache
 .ccls-cache
