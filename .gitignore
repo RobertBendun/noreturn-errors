@@ -1,0 +1,9 @@
+cpp
+dlang
+go
+rust
+zig
+*.o
+
+zig-cache
+.ccls-cache
