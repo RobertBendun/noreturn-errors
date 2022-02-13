@@ -1,4 +1,4 @@
-Executables=cpp dlang go rust
+Executables=cpp dlang go rust zig
 
 all: $(Executables)
 
