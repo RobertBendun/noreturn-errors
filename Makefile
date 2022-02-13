@@ -1,12 +1,15 @@
-Executables=cpp dlang go rust zig
+Executables=c cpp dlang go rust zig
 
 all: $(Executables)
 
 %: %.d
 	dmd $<
 
+%: %.c
+	cc -Wall -Wextra -o $@ $< -O2
+
 %: %.cc
-	g++ -std=c++20 -Wall -Wextra -o $@ $< -O2
+	c++ -std=c++20 -Wall -Wextra -o $@ $< -O2
 
 %: %.rs
 	rustc $<
