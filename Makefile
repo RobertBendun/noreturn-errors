@@ -1,4 +1,4 @@
-Executables=c cpp csharp.exe dlang go haskell rust zig
+Executables=c cpp csharp.exe dlang go haskell rust-function rust-macro zig
 
 all: $(Executables)
 

@@ -3,7 +3,8 @@ cpp
 dlang
 go
 haskell
-rust
+rust-function
+rust-macro
 zig
 
 *.o
