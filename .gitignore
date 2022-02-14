@@ -5,8 +5,10 @@ go
 haskell
 rust
 zig
+
 *.o
 *.hi
+*.exe
 
 zig-cache
 .ccls-cache

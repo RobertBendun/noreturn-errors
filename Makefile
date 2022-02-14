@@ -1,4 +1,4 @@
-Executables=c cpp dlang go haskell rust zig
+Executables=c cpp csharp.exe dlang go haskell rust zig
 
 all: $(Executables)
 
@@ -22,6 +22,9 @@ all: $(Executables)
 
 %: %.hs
 	ghc $<
+
+%.exe: %.cs
+	mcs $<
 
 clean:
 	rm -f $(Executables) *.o *.hi
